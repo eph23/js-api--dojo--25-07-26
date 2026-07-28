@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: monospace;
+    color: #555;
+    background-color: #f7f7f7;
+    min-height: 100vh;
+}
+
+.default-heading {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 30px;
+}
+
+.countries {
+    /* margin-bottom: 8rem; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: space-between;
+    gap: 30px;
+    font-size: 2rem;
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+.country {
+    background-color: #fff;
+    box-shadow: 0 2rem 5rem 1rem rgba(0, 0, 0, 0.1);
+    font-size: 1.8rem;
+    width: 30rem;
+    border-radius: 0.7rem;
+    margin: 0 3rem;
+    /* overflow: hidden; */
+}
+
+.country__img {
+    width: 30rem;
+    height: 17rem;
+    object-fit: cover;
+    background-color: #eee;
+    border-top-left-radius: 0.7rem;
+    border-top-right-radius: 0.7rem;
+}
+
+.country__data {
+    padding: 2.5rem 3.75rem 3rem 3.75rem;
+}
+
+.country__name {
+    font-size: 2.7rem;
+    margin-bottom: 0.7rem;
+}
+
+.country__capital {
+    font-size: 1.4rem;
+    margin-bottom: 2.5rem;
+    text-transform: uppercase;
+    color: #888;
+}
+
+.country__row:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.country__row span {
+    display: inline-block;
+    margin-right: 2rem;
+    font-size: 2.4rem;
+}
